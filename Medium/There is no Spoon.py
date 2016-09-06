@@ -1,3 +1,4 @@
+#coding=utf8
 import sys
 import math
 
@@ -7,6 +8,7 @@ width = int(raw_input())
 height = int(raw_input())
 list=[]
 portrait=[]
+#0.00转换成坐标形式，过滤掉每行的空坐标
 for i in xrange(height):
     line = raw_input()
     transverse=[]
@@ -22,8 +24,8 @@ for i in xrange(height):
 
 porhig=len(portrait)
 
+#one当前坐标，two右侧坐标，three下方坐标
 for k in range(porhig):
-
     for v in range(len(portrait[k])):
         one=portrait[k][v]
         three=-1,-1
