@@ -37,7 +37,7 @@ while True:
                     print line.pop(), line.pop()
                     i = 1
                     break
-            if i == 1:
-                break
+            else:continue
+            break
 
 
