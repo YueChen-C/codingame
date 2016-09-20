@@ -1,4 +1,3 @@
-
 #coding=utf8
 #                       东西南北
 #EAST,WEST,SOUTH,NORTH: 右左下上  WEST, NORTH, EAST, SOUTH：
@@ -6,7 +5,12 @@
 #SOUTH, EAST, NORTH, WEST：下右上左
 #l变更  左上右下
 
-text=['###############', '#      IXXXXX #', '#  @          #', '#E S          #', '#             #', '#  I          #', '#  B          #', '#  B   S     W#', '#  B   T      #', '#             #', '#         T   #', '#         B   #', '#N          W$#', '#        XXXX #', '###############']
+l, c = [int(i) for i in raw_input().split()]
+text=[]
+for i in xrange(l):
+    row = raw_input()
+    text.append(row)
+
 
 
 class main():

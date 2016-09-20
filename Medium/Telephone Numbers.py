@@ -36,9 +36,4 @@ for i in range(longtel-1):
 print len(num)
 
 
-# Write an action using print
-# To debug: print >> sys.stderr, "Debug messages..."
-
-
-# The number of elements (referencing a number) stored in the structure.
 
