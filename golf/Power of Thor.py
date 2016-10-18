@@ -7,19 +7,27 @@ while 1:K,tx,ty=map(lambda (a,b):a+b,zip(("S",0,ty+1)if ty<ly else(("N",0,ty-1)i
 
 lx,ly,tx,ty=[int(i) for i in raw_input().split()]
 while 1:
-    K=""
-    if ty<ly:
-        K="S"
-        ty+=1
-    elif ly<ty:
-        K="N"
-        ty-=1
-    if tx<lx:
-        K+="E"
-        tx+=1
-    elif lx<tx:
-        K+="W"
-        tx-=1
+    if ty<ly:K="S";ty+=1
+    elif ly<ty:K="N";ty-=1
+    if tx<lx:K+="E";tx+=1
+    elif lx<tx:K+="W";tx-=1
     print K,lx,ly,tx,ty
+
+# lx,ly,tx,ty=[int(i) for i in raw_input().split()]
+# while 1:
+#     K=""
+#     if ty<ly:
+#         K="S"
+#         ty+=1
+#     elif ly<ty:
+#         K="N"
+#         ty-=1
+#     if tx<lx:
+#         K+="E"
+#         tx+=1
+#     elif lx<tx:
+#         K+="W"
+#         tx-=1
+#     print K,lx,ly,tx,ty
 
 

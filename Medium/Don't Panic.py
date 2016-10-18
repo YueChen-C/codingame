@@ -1,17 +1,17 @@
 import sys
 import math
 
-nb_floors, width, nb_rounds, exit_floor, exit_pos, nb_total_clones, nb_additional_elevators, nb_elevators = [int(i) for i in raw_input().split()]
+q,w,e,r, exit_pos, nb_total_clones, nb_additional_elevators, nb_elevators = [int(i) for i in raw_input().split()]
 
-floorTarget = [0 for i in range(nb_floors)]
-floorProcessed = [False for i in range(nb_floors)]
+floorTarget = [0 for i in range(q)]
+floorProcessed = [False for i in range(q)]
 for i in xrange(nb_elevators):
      # elevator_floor: floor on which this elevator is found
      # elevator_pos: position of the elevator on its floor
     elevator_floor, elevator_pos = [int(j) for j in raw_input().split()]
     floorTarget[elevator_floor] = elevator_pos
 
-floorTarget[exit_floor] = exit_pos
+floorTarget[r] = exit_pos
 
 
 while 1:

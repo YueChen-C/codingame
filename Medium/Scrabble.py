@@ -1,3 +1,4 @@
+#coding=utf8
 import sys
 import math
 n = int(input())
@@ -12,6 +13,7 @@ letters = input()
 
 points={1:"e,a,i,o,n,r,t,l,s,u",2:'d,g',3:'b,c,m,p',4:'f,h,v,w,y',5:'k',6:'j,x',7:'q,z'}
 
+#将letters分解列出
 letpoints={}
 for i in letters:
     for k in points:
@@ -25,6 +27,7 @@ for word in text:
         if word.count(v)>letters.count(v):
             jump=False
             break
+    #如果出现重复字符串，则跳过该单词
     if jump==False:
         jump=True
         continue
