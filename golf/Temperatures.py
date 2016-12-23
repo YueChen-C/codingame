@@ -1,3 +1,4 @@
-n=raw_input();l=map(int,raw_input().split( ))
-if l:k=min(map(abs,l));print k if k in l else-k
-else:print 0
+input();l=map(int,raw_input().split( ))
+k=l and min(map(abs,l))or 0;print k in l and k or -k
+
+
